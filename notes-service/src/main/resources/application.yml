@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: note-service
+  config:
+    import: configserver:http://localhost:8888
+  jpa:
+    generate-ddl: false
+
+  cloud:
+    stream:
+      bindings:
+        personUpdatedEventConsumer-in-0:
+          destination: persons-topic
+          group: persons-event-queue

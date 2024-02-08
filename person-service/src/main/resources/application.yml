@@ -1,0 +1,7 @@
+spring:
+  jpa:
+    generate-ddl: false
+  application:
+    name: person-service
+  config:
+    import: configserver:http://localhost:8888

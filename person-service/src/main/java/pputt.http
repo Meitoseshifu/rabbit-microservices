@@ -1,0 +1,8 @@
+PUT http://localhost:8081/persons/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "Lakuna",
+  "lastName": "Matata"
+}
